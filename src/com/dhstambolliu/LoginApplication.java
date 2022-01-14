@@ -11,7 +11,7 @@ public class LoginApplication {
     private String emailAddress;
     private String password;
 
-    public void verifyIsUserIsRegistered() throws FileNotFoundException {
+    public void verifyIfUserIsRegistered() throws FileNotFoundException {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter your email");
         emailAddress = scanner.nextLine();
@@ -46,7 +46,7 @@ public class LoginApplication {
             System.out.println("Login successful\n");
         } else {
             System.out.println("Login information is not correct");
-            verifyIsUserIsRegistered();
+            verifyIfUserIsRegistered();
         }
     }
 }

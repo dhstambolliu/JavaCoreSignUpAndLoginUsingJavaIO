@@ -29,6 +29,6 @@ public class MainMenu {
 
     public void login() throws FileNotFoundException {
         LoginApplication loginApplication = new LoginApplication();
-        loginApplication.verifyIsUserIsRegistered();
+        loginApplication.verifyIfUserIsRegistered();
     }
 }
